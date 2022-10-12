@@ -14,8 +14,9 @@
 - 1.Install all the dependencies.     
 - 2.Copy the command files into your command folder.  
 - 3.Copy the Event files into your event folder.      
-- 5.Replace the channelID in the Command/Suggest File `client.channels.cache.get("here")`            
-- 4.Try the commands!
+- 4.Replace the channelID in the Command/Suggest File `client.channels.cache.get("here")` 
+- 5. Replace the channel link in Command/Suggest file 
+- 6.Try the commands!
 
 
 ## Contributing
