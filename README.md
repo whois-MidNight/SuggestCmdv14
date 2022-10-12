@@ -24,12 +24,11 @@
 
     // Add this to the top of the file
     const { connect } = require('mongoose')
-    const chalk = require("chalk")
     
     // Add this to your ready.js file
     await connect(MONGO_URI)
       .then(() => {
-        console.log(chalk.yellow(`✅ >>> Successfully connected to MongoDB!`));
+        console.log(`✅ >>> Successfully connected to MongoDB!`);
       })
       .catch((err) => {
         console.log(err);
