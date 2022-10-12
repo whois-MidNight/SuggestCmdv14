@@ -6,7 +6,7 @@ const {
 } = require("discord.js");
 const SuggestDB = require("../../Schemas/SuggestDB");
 module.exports = {
-  id: "suggest-accept",
+  id: "suggest-decline",
   /**
    * @param {ButtonInteraction} interaction
    */
