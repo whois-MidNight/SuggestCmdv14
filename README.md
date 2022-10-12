@@ -5,6 +5,7 @@
 
 ## **Dependencies**:
 > - `npm i discord.js` OR `yarn install discord.js`
+> - `npm i mongoose` OR `yarn install mongoose`
 
 ## **Shields.io**
 ![GitHub Repo stars](https://img.shields.io/github/stars/whois-MidNight/Suggest-Cmd-v14?style=for-the-badge)
@@ -13,11 +14,26 @@
 
 - 1.Install all the dependencies.     
 - 2.Copy the command files into your command folder.  
-- 3.Copy the Event files into your event folder.      
-- 4.Replace the channelID in the Command/Suggest File `client.channels.cache.get("here")` 
-- 5. Replace the channel link in Command/Suggest file 
-- 6.Try the commands!
+- 3.Copy the Event files into your event folder.  
+- 4.Copy The Schema file into your schema folder.    
+- 5.Replace the channelID in the Command/Suggest File `client.channels.cache.get("here")` 
+- 6.Replace the channel link in Command/Suggest file 
+- 7.Try the commands!
+## Mongo DB Code
+> be sure to add this to your ready.js file.    
 
+    // Add this to the top of the file
+    const { connect } = require('mongoose')
+    const chalk = require("chalk")
+    
+    // Add this to your ready.js file
+    await connect(MONGO_URI)
+      .then(() => {
+        console.log(chalk.yellow(`✅ >>> Successfully connected to MongoDB!`));
+      })
+      .catch((err) => {
+        console.log(err);
+      });
 
 ## Contributing
 
